@@ -28,30 +28,29 @@
         introduzca tu nombre en el input.-->
             <label for="nameToInput"><b>Exercise 3</b></label>
             <input type="text" id="nameToInput" name="nameToInput">
-            <button type="submit" onclick="document.getElementById('nameToInput').value">Click me</button>
+            <button type="submit" onclick="document.getElementById('nameToInput').value = 'Carlos'">Click me</button>
         </article>
 
         <article class="exercise4"> <!-- 4- Crea un html básico con un botón (que tenga como texto Click me ) y un input, y asigne a un párrafo p el texto
         que pongas por el input.-->
             <p id="inputToP"></p>
             <label for=p><b>Exercise 4</b></label>
-            <input type="text">
-            <button type="button" onclick="document.getElementById('inputToP').innerText=''">Click me</button>
+            <input type="text" id="inputP">
+            <button type="button" onclick="document.getElementById('inputToP').innerText = document.getElementById('inputP').value">Click me</button>
         </article>
 
         <article class="exercise5"> <!-- 5- Crea un html básico con un botón (que tenga como texto Click me ) y un input y que cuando pulse el botón,
         cambie el texto de dicho botón con lo escribo en el input.-->
             <label for="button"><b>Exercise 5</b></label>
-            <input type="text">
-            <button type="button" id="button" onclick="document.getElementById('button').value">Click me</button>
+            <input type="text" id="textToChange">
+            <button type="button" id="button" onclick="document.getElementById('button').innerText = document.getElementById('textToChange').value">Click me</button>
         </article>
 
         <article class="exercise6"> <!--6- Crea un html básico con un botón (que tenga como texto Click me ) y una img (puedes dejarle vació por defecto
         la propiedad src). Y cuando pulses sobre el botón, le inserte a la etiqueta img una imagen cualq-->
             <label for="codeImage"><b>Exercise6</b></label>
-            <img src="/img/codeImage.png" alt="codeImage">
-            <input type="image" id="codeImage">
-            <button type="button" onclick="document.getElementById('codeImage').src">Click me</button>
+            <img src="" alt="codeImage" id="codeImage">
+            <button type="button" onclick="document.getElementById('codeImage').src = '/img/codeImage.png'">Click me</button>
         </article>
 
         <script src="/js/demo.js"></script>
