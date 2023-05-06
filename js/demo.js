@@ -1,9 +1,5 @@
 document.getElementById("saludoConsola").value = "Hola, mira mi saludo en Console";
 document.getElementById("inputValorConsola").value = "3+24";
-document.getElementById("nameToInput").value;
-document.getElementById('inputToP').innerText;
-document.getElementById("button").value;
-document.getElementById("codeImage").src;
 
 
 
